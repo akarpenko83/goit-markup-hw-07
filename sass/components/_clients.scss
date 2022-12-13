@@ -1,0 +1,42 @@
+.clients>.container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients .title {
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+    min-width: 170px;
+    min-height: 92px;
+    border: 1px solid;
+    border-color: var(--icon-main-color);
+    border-radius: 4px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: var(--icon-main-color);
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(var(--cubic)),
+        border-color 250ms cubic-bezier(var(--cubic));
+}
+
+.client-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.client-logo {
+    fill: currentColor;
+}

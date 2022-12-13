@@ -1,0 +1,22 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+    font-weight: 500;
+
+    &__item {
+        color: inherit;
+        transition: color 250ms cubic-bezier(var(--cubic));
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            fill: var(--accent-color);
+        }
+    }
+    &__icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}

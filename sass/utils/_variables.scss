@@ -1,0 +1,25 @@
+/*  цвет основного текста #757575
+    вторичный цвет (заголовки) #212121
+    цвет акцента #2196f3 */
+    
+:root {
+    --card-set-gap: 30px;
+    --logo-primary-color: #000000;
+    --logo-inverse-color: #ffffff;
+    --text-primary-color: #757575;
+    --icon-main-color: #afb1b8;
+    --title-color: #212121;
+    --hero-text-color: #ffffff;
+    --accent-color: #2196f3;
+    --bg-primary-color: #ffffff;
+    --bg-secondary-color: #f5f4fa;
+    --bg-footer-color: #2f303a;
+    --btn-bg-color: #f5f4fa;
+    --btn-text-color: #212121;
+    --btn-second-text-color: #ffffff;
+    --addr-secondary-color: rgba(255,
+            255,
+            255,
+            0.6);
+    --cubic: 0.4, 0, 0.2, 1;
+}

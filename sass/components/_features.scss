@@ -1,0 +1,35 @@
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 270px;
+        }
+    &__icon {
+        display: inline-flex;
+        min-width: 270px;
+        min-height: 120px;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-secondary-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        }
+    &__subtitle {
+        display: block;
+        color: var(--title-color);
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+}
+    &__text {
+        line-height: 1.71;
+}
+}
+
+
+
