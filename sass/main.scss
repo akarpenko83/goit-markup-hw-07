@@ -1,8 +1,19 @@
 @import './utils/variables';
-@import './utils/common';
-@import './utils/utilitary';
+@import './utils/vis-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/common';
+
+@import './components/btn-close';
+@import './components/btn_submit';
+@import './components/title';
+@import './components/socials';
+@import './components/grid';
+@import './components/backdrop';
+@import './components/form';
+@import './components/page-header';
 @import './components/logo';
-@import './components/header';
 @import './components/sitenav';
 @import './components/contacts';
 @import './components/hero';
@@ -11,7 +22,9 @@
 @import './components/team';
 @import './components/clients';
 @import './components/portfolio';
-@import './components/cardset';
+@import './components/card';
 @import './components/footer';
-@import './utils/modal';
+@import './components/joinup';
+@import './components/subscribe';
+@import './components/modal';
 

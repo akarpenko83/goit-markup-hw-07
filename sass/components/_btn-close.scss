@@ -1,0 +1,17 @@
+
+.btn-close {
+    position: absolute;
+    @include flex();
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn-close__icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(var(--cubic));
+}

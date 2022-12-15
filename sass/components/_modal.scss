@@ -1,0 +1,26 @@
+.modal {
+    @include flex(flex,column);
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: var(--bg-primary-color);
+    transition: 
+    transform 250ms cubic-bezier(var(--cubic));
+    &:focus-within .btn-close__icon {
+            fill: var(--accent-color);
+        }
+}
+.modal__header {
+    @include font(20,700,1.15,null);
+    margin-bottom: 12px;
+    color: var(--btn-text-color);
+    text-align: center;
+}

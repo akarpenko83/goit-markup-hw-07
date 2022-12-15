@@ -41,10 +41,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
+      <div class="header__container">
         <div class="logo header__logo">
           <a
-            class="logo__link link"
+            class="logo__link"
             href="./index.html"
           >
             <span class="logo--accent">Web</span
@@ -52,32 +52,32 @@
           >
         </div>
         <nav class="site-nav">
-          <ul class="site-nav__list list">
-            <li class="site-nav__item">
+          <ul class="nav__list">
+            <li class="nav__item">
               <a
-                class="site-nav__link"
+                class="nav__link"
                 href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="site-nav__item">
+            <li class="nav__item">
               <a
-                class="site-nav__link site-nav__link--active"
+                class="nav__link nav__link--active site-nav__nav"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href=""
+            <li class="nav__item">
+              <a class="nav__link" href=""
                 >Контакти</a
               >
             </li>
           </ul>
         </nav>
-        <ul class="contacts list">
+        <ul class="contacts header__contacts">
           <li class="contacts__item">
             <a
-              class="contacts__link link"
+              class="contacts__link"
               href="mailto:info@devstudio.com"
             >
               <svg
@@ -94,7 +94,7 @@
           </li>
           <li class="contacts__item">
             <a
-              class="contacts__link link"
+              class="contacts__link"
               href="tel:+380961111111"
             >
               <svg
@@ -115,340 +115,350 @@
     <main>
       <!-------------------------------------- section PORTFOLIO -->
 
-      <section class="section portfolio">
-        <div class="container">
-          <!------------------------------------ filter buttons -->
-          <h2 class="visually-hidden">Фільтри</h2>
-          <ul class="btn-list list">
-            <li class="btn-item">
+      <section class="portfolio">
+        <div class="portfolio__container">
+          <!-- -----------------filter list--------------------- -->
+          <ul class="fltr-list">
+            <li class="fltr-list__item">
               <button
                 type="button"
-                class="portf-btn btn current"
+                class="fltr-list__btn fltr-list__btn--active"
               >
                 Усі
               </button>
             </li>
-            <li class="btn-item">
+            <li class="fltr-list__item">
               <button
                 type="button"
-                class="portf-btn btn"
+                class="fltr-list__btn"
               >
                 Веб-сайти
               </button>
             </li>
-            <li class="btn-item">
+            <li class="fltr-list__item">
               <button
                 type="button"
-                class="portf-btn btn"
+                class="fltr-list__btn"
               >
                 Додатки
               </button>
             </li>
-            <li class="btn-item">
+            <li class="fltr-list__item">
               <button
                 type="button"
-                class="portf-btn btn"
+                class="fltr-list__btn"
               >
                 Дизайн
               </button>
             </li>
-            <li class="btn-item">
+            <li class="fltr-list__item">
               <button
                 type="button"
-                class="portf-btn btn"
+                class="fltr-list__btn"
               >
                 Маркетинг
               </button>
             </li>
           </ul>
-          <!------------------------------------ content area -->
+          <!---------------------------------- content area----- -->
 
-          <ul class="portf-list list">
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-1.jpg"
-                  alt="ноутбук"
-                  width="370"
-                />
-                <p class="overlay">
-                  Ресурс пропонує комплексні
-                  пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це
-                  дозволить відвідувачу отримати
-                  вичерпні відомості про компанію
-                  чи приватну особу.
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Технокряк
-                </h3>
-                <p class="portf-item text">
-                  Веб-сайт
-                </p>
-              </div>
-              <div class="overlay"></div>
+          <ul class="grid">
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-1.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3 class="product__name">
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-2.jpg"
-                  alt="два баскетболісти"
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem ipsum dolor sit, amet
-                  consectetur adipisicing elit.
-                  Fugit facere ut nostrum
-                  quisquam, id aliquam in quod.
-                  Sit, incidunt minus autem
-                  consectetur minima dignissimos
-                  iure voluptate molestiae impedit
-                  labore unde!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Постер New Orlean vs Golden Star
-                </h3>
-                <p class="portf-item text">
-                  Дизайн
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-2.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3 class="product__name">
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-3.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Natus quae ad minus recusandae
-                  corporis, accusantium corrupti
-                  ullam harum incidunt suscipit
-                  voluptatum nam, amet placeat sed
-                  mollitia eveniet porro sint
-                  dolore!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Ресторан Seafood
-                </h3>
-                <p class="portf-item text">
-                  Додаток
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-3.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3 class="product__name">
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-4.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Culpa sunt eligendi iusto
-                  doloribus aspernatur laborum,
-                  aperiam laboriosam est possimus
-                  recusandae, asperiores ad sed
-                  eaque impedit? Quibusdam veniam
-                  nobis perspiciatis sapiente!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Проєкт Prime
-                </h3>
-                <p class="portf-item text">
-                  Маркетинг
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-4.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3
+                    class="subtitle product__name"
+                  >
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-5.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Culpa sunt eligendi iusto
-                  doloribus aspernatur laborum,
-                  aperiam laboriosam est possimus
-                  recusandae, asperiores ad sed
-                  eaque impedit? Quibusdam veniam
-                  nobis perspiciatis sapiente!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Проєкт Boxes
-                </h3>
-                <p class="portf-item text">
-                  Додаток
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-5.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3
+                    class="subtitle product__name"
+                  >
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-6.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Culpa sunt eligendi iusto
-                  doloribus aspernatur laborum,
-                  aperiam laboriosam est possimus
-                  recusandae, asperiores ad sed
-                  eaque impedit? Quibusdam veniam
-                  nobis perspiciatis sapiente!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3
-                  class="portf-item subtitle"
-                  lang="en"
-                >
-                  Inspiration has no Borders
-                </h3>
-                <p class="portf-item text">
-                  Веб-сайт
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-6.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3
+                    class="subtitle product__name"
+                  >
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-7.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Culpa sunt eligendi iusto
-                  doloribus aspernatur laborum,
-                  aperiam laboriosam est possimus
-                  recusandae, asperiores ad sed
-                  eaque impedit? Quibusdam veniam
-                  nobis perspiciatis sapiente!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Видання Limited Edition
-                </h3>
-                <p class="portf-item text">
-                  Дизайн
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-7.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3
+                    class="subtitle product__name"
+                  >
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-8.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Culpa sunt eligendi iusto
-                  doloribus aspernatur laborum,
-                  aperiam laboriosam est possimus
-                  recusandae, asperiores ad sed
-                  eaque impedit? Quibusdam veniam
-                  nobis perspiciatis sapiente!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3 class="portf-item subtitle">
-                  Проєкт LAB
-                </h3>
-                <p class="portf-item text">
-                  Маркетинг
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-8.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3
+                    class="subtitle product__name"
+                  >
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
-
-            <li class="portf-item">
-              <div class="portf-thumb">
-                <img
-                  src="./images/portf-img-9.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
-                <p class="overlay">
-                  Lorem, ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Culpa sunt eligendi iusto
-                  doloribus aspernatur laborum,
-                  aperiam laboriosam est possimus
-                  recusandae, asperiores ad sed
-                  eaque impedit? Quibusdam veniam
-                  nobis perspiciatis sapiente!
-                </p>
-              </div>
-              <div class="portf-item-descr">
-                <h3
-                  class="portf-item subtitle"
-                  lang="en"
-                >
-                  Growing Business
-                </h3>
-                <p class="portf-item text">
-                  Додаток
-                </p>
-              </div>
+            <li class="grid__item">
+              <article class="product">
+                <div class="product__thumb">
+                  <img
+                    class="product__image"
+                    src="./images/portf-img-9.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
+                  <p class="product__overlay">
+                    Ресурс пропонує комплексні
+                    пропозиції з різним рівнем
+                    функціоналу та сервісів. Все
+                    це дозволить відвідувачу
+                    отримати вичерпні відомості
+                    про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="product__footer">
+                  <h3
+                    class="subtitle product__name"
+                  >
+                    Технокряк
+                  </h3>
+                  <p class="product__descr">
+                    Веб-сайт
+                  </p>
+                </div>
+              </article>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <a
-            class="logo link"
-            href="./index.html"
-          >
-            <span class="accent">Web</span
-            ><span class="logo-second-color"
-              >Studio</span
-            ></a
-          >
+      <div class="footer__container">
+        <div class="footer__contacts">
+          <div class="logo footer__logo">
+            <a
+              class="logo__link"
+              href="./index.html"
+            >
+              <span class="logo--accent">Web</span
+              ><span class="logo--inverse"
+                >Studio</span
+              >
+            </a>
+          </div>
           <address class="address">
-            <ul class="address-list list">
-              <li class="addr-list-item">
+            <ul class="address__list">
+              <li class="address__item">
                 <a
-                  class="address-item link"
+                  class="address__link address__link--white"
                   href="https://goo.gl/maps/LDMniA5MoxQiVdcX9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -456,16 +466,16 @@
                   26</a
                 >
               </li>
-              <li class="addr-list-item">
+              <li class="address__item">
                 <a
-                  class="address-item link"
+                  class="address__link"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="addr-list-item">
+              <li class="address__item">
                 <a
-                  class="address-item link"
+                  class="address__link"
                   href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
@@ -474,17 +484,19 @@
           </address>
         </div>
         <div class="joinup">
-          <p>приєднуйтесь</p>
-          <ul class="team-socials list">
-            <li class="social-item">
+          <p class="joinup__title">
+            приєднуйтесь
+          </p>
+          <ul class="social joinup__social">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link joinup__link"
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg
-                  class="social-icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                 >
@@ -494,15 +506,15 @@
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link joinup__link"
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg
-                  class="social-icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                 >
@@ -512,15 +524,15 @@
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link joinup__link"
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg
-                  class="social-icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                 >
@@ -530,15 +542,15 @@
                 </svg>
               </a>
             </li>
-            <li class="social-item">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link joinup__link"
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 <svg
-                  class="social-icon"
+                  class="social__icon"
                   width="20"
                   height="20"
                 >
@@ -551,30 +563,30 @@
           </ul>
         </div>
         <form
-          class="subscribe-form"
+          class="subscribe"
           autocomplete="on"
           novalidate
         >
           <label
             for="email"
-            class="subscribe-label"
+            class="subscribe__label"
             >Підпишіться на розсилку</label
           >
           <input
-            class="input-email"
+            class="subscribe__email"
             type="email"
             name="email"
             id="email"
-            placeholder="Email"
+            placeholder="E-mail"
           />
 
           <button
             type="submit"
-            class="submit-btn btn"
+            class="subscribe__btn"
           >
             Підписатися
             <svg
-              class="icon-send"
+              class="subscribe__icon"
               width="24"
               height="24"
             >

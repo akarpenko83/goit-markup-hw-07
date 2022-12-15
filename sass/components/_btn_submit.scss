@@ -1,0 +1,15 @@
+.subscribe__btn {
+    @extend %btn;
+    @include flex (inline-flex, null, null, null, center, center);
+    @include font(16, 700, 1.875, 0.06);
+    height: 50px;
+    width: 200px;
+    padding: 10px 28px;
+    color: var(--bg-primary-color);
+    fill: currentColor;
+    background-color: var(--accent-color);
+}
+
+.subscribe__icon {
+    margin-left: 10px;
+}

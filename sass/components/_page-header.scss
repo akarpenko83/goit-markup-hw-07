@@ -1,0 +1,21 @@
+.header {
+  height: 80px;
+  z-index: 3;
+  background-color: var(--bg-primary-color);
+  border-bottom: 1px solid #ececec;
+  }
+.header__container {
+  @extend %container;
+  @extend %flex-align-center;
+    height: 100%;
+}
+.header__logo {
+  margin-right: 93px;
+}
+.header__contacts {
+  margin-left: auto;
+}
+
+
+
+
