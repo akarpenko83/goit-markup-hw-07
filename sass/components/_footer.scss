@@ -6,7 +6,7 @@
 
 .footer__container {
     @extend %container;
-    @include flex(flex,null,null,null,null,space-between);
+    @include flex(flex,null,null,null,baseline,space-between);
 }
 // -------------------- address ------------------
 .address__list {

@@ -60,7 +60,7 @@
   letter-spacing: 0.03em;
 }
 
-.hero__container, .contacts, .nav__list, .header__container {
+.hero__container, .contacts__link, .nav__list, .header__container {
   display: flex;
   align-items: center;
 }
@@ -121,6 +121,9 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+.btn-close:hover, .btn-close:focus {
+  color: var(--accent-color);
 }
 
 .btn-close__icon {
@@ -215,6 +218,10 @@ img {
 }
 
 .form__label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   margin-bottom: 4px;
 }
 
@@ -278,6 +285,7 @@ img {
   position: relative;
   display: flex;
   justify-content: space-evenly;
+  color: var(--text-primary-color);
 }
 
 .form__policy-chkbox {
@@ -387,6 +395,7 @@ img {
 }
 
 .contacts {
+  display: flex;
   font-weight: 500;
   gap: 50px;
 }
@@ -510,6 +519,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -696,6 +709,7 @@ img {
 
 .footer__container {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -728,14 +742,13 @@ img {
 }
 
 .joinup__title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: em;
   text-align: left;
   color: var(--logo-inverse-color);
   text-transform: uppercase;
-  margin-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -748,11 +761,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: em;
-  margin-top: 12px;
   margin-bottom: 20px;
   color: var(--logo-inverse-color);
   text-transform: uppercase;

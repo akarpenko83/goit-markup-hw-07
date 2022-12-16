@@ -1,9 +1,10 @@
 .contacts {
-    @extend %flex-align-center;
+   display: flex;
     font-weight: 500;
     gap: 50px;
 }
 .contacts__item {
+
     @extend %list;
     color: inherit;
     transition: color 250ms cubic-bezier(var(--cubic));
@@ -14,7 +15,9 @@
     }
 }
 .contacts__link {
-    @extend %link;
+        @extend %link;
+    @extend %flex-align-center;
+
 }
 .contacts__icon {
     fill: currentColor;

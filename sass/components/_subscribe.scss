@@ -1,7 +1,7 @@
 .subscribe__label {
     @include flex(flex,column,null,null,null,left);
-    @include font(16,700,1.14,null);
-    margin-top: 12px;
+    @include font(14,700,1.14,null);
+    // margin-top: 12px;
     margin-bottom: 20px;
     color: var(--logo-inverse-color);
     text-transform: uppercase;

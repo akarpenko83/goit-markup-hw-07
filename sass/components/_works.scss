@@ -17,6 +17,7 @@
     }
 .works__label {
     @include flex(flex, null, null, null, center, center);
+    @include font(14,700,1.14,0.03);
     position: absolute;
     z-index: 1;
     width: 100%;

@@ -3,6 +3,7 @@ width: 100%;
 }
 
 .form__label {
+    @include font(12);
     margin-bottom: 4px;
 }
 .form__wrap {
@@ -57,6 +58,7 @@ width: 100%;
 .form__policy-label {
     position: relative;
     @include flex(flex,null,null,null,null,space-evenly);
+    color: var(--text-primary-color);
 }
 .form__policy-chkbox {
     @include flex();

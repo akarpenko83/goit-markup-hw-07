@@ -1,10 +1,10 @@
 // ---------------------------- joinup
 .joinup__title {
-    @include font(16, 700, 1.2, null);
+    @include font(14, 700, 1.2, null);
     text-align: left;
     color: var(--logo-inverse-color);
     text-transform: uppercase;
-    margin-top: 12px;
+    // margin-top: 12px;
     margin-bottom: 20px;
 }
 
